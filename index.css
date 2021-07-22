@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Jost", Helvetica, sans-serif;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.68);
+  background-attachment: fixed;
+  z-index: 11;
+}
+
+.sign-in {
+  width: 40rem;
+  transform: translateX(100%);
+  transition: 0.3s ease;
+}
+.login:hover {
+  border: 1px solid black;
+}
+.register:hover {
+  border: none;
+}
+
+/* shop more */
+.shop-more {
+  background-color: white;
+  padding: 0 10rem;
+  width: 100vw;
+  height: auto;
+  transform: translateX(-37%);
+  display: grid;
+  grid-template-columns: 200px 200px 200px 400px;
+  grid-gap: 10px 50px;
+  justify-self: center;
+  padding-bottom: 3rem;
+}
+.shop-more-container {
+  display: none;
+  transition: all 0.5s ease-in;
+}
+.shop-more-link:hover .shop-more-container {
+  display: block;
+}
+/* home image */
+.home-image {
+  height: 67.5rem;
+}
+.home-image-content {
+  transform: translateY(-50%);
+}
+.shop-now {
+  width: 17.8rem;
+  border-radius: 3rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 13px 20px 12px;
+  border: 2px solid black;
+}
+.shop-now:hover {
+  background-color: #fbbf24;
+  border: none;
+}
+
+/* paddle board */
+.paddle-board {
+  height: 55.2rem;
+  width: 100%;
+}
+.paddle-board-shop {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-35%);
+  height: 38rem;
+  width: 35rem;
+  padding: 2.5rem 1.5rem 3rem;
+}
+.shop-now-2 {
+  width: 17.8rem;
+  border-radius: 0.3rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 13px 20px 12px;
+  border: 2px solid black;
+  color: white;
+  background-color: black;
+}
+.shop-now-2:hover {
+  background-color: white;
+  color: black;
+}
+/* new products */
+.new-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30.6rem, 1fr));
+  grid-gap: 20px;
+}
+.grid-item {
+  width: 29.2rem;
+  height: 45.7rem;
+  padding: 0 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.grid-image {
+  width: 30.2rem;
+  height: 35rem;
+}
+.add-to-cart {
+  border: 1px solid black;
+  padding: 14px 15px 12px;
+  z-index: -1;
+  opacity: 0;
+}
+.add-to-cart:hover {
+  background-color: black;
+  color: white;
+}
+.image-link {
+  transition: all 0.3s ease-in-out;
+}
+.image-link:hover .add-to-cart {
+  z-index: 1;
+  opacity: 1;
+}
+.quick-view {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  line-height: 30px;
+  padding: 0 1.5rem;
+  background-color: white;
+  font-size: 1.3rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+.image-link:hover .quick-view {
+  display: block !important;
+}
+
+/* BUy now */
+.buy-now {
+  height: 67.5rem;
+  margin-top: 10rem;
+}
+.let-surf {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-35%);
+  height: 38rem;
+  width: 35rem;
+  padding: 2.5rem 1.5rem 3rem;
+}
+.let-surf-overlay {
+  background-color: #f6f6f6;
+  position: absolute;
+  width: 32%;
+  height: inherit;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all 1s ease-out;
+}
+.buy-now:hover .let-surf-overlay {
+  width: 52%;
+}
+
+/* Featured collection */
+.featured-collection {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30.6rem, 1fr));
+  grid-gap: 20px;
+  justify-self: center;
+}
+.shop-now-3 {
+  background-color: white;
+  color: black;
+}
+.shop-now-3:hover {
+  background-color: black;
+  color: white;
+}
+
+/* where to ride */
+.where2ride {
+  position: relative;
+  margin-top: 5rem;
+  background-color: #72d1c6;
+  padding-bottom: 8rem;
+  height: 85.5rem;
+}
+
+/* 
+swiper */
+.swiper-container {
+  margin-top: 10rem;
+  height: 55.8rem;
+  width: 75%;
+}
+
+.swiper-slide {
+  width: 37rem;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide-custom {
+  margin-top: -10rem;
+  flex-direction: column;
+}
+.swiper-image {
+  height: 44.3rem;
+  width: 100%;
+  overflow: hidden;
+}
+.swiper-image img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.swiper-image img:hover {
+  transform: scale(1.1);
+}
+.swiper-container2 {
+  height: 45.7rem;
+}
+.swiper-slide2 {
+  width: 29.2rem;
+  height: 45.7rem;
+  padding: 0 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}

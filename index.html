@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/0ac23ca/css/all.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"
+      integrity="sha512-7oYXeK0OxTFxndh0erL8FsjGvrl2VMDor6fVqzlLGfwOQQqTbYsGPv4ZZ15QHfSk80doyaM0ZJdvkyDcVO7KFA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.2/angular-route.min.js"
+      integrity="sha512-5zOAub3cIpqklnKmM05spv4xttemFDlbBrmRexWiP0aWV8dlayEGciapAjBQWA7lgQsxPY6ay0oIUVtY/pivXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="app.js"></script>
+    <title>Document</title>
+  </head>
+  <body ng-app="app">
+    <div class="wrapper">
+      <ng-include src="'views/header.html'"></ng-include>
+      <main>
+        <div class="px-12">
+          <div class="w-full home-image relative">
+            <div class="absolute top-2/4 left-32 home-image-content">
+              <h2 class="text-7xl font-bold mb-3.5">New Arrivals</h2>
+              <p class="text-3xl font-bold mb-14">From $399</p>
+              <p class="text-2xl max-w-xl mb-20">
+                Quisquemos sodales suscipit tortor condimentum de cosmo lacus
+                meleifend menean blanditos.
+              </p>
+              <a class="shop-now cursor-pointer">SHOP NOW</a>
+            </div>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0064/4435/1539/files/banner-slider-1.jpg?v=1621934503"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+          <!-- free shipping -->
+          <div class="h-96 bg-gray-200 py-32 mt-12">
+            <div class="flex justify-center items-center">
+              <div class="w-4/12 flex px-16">
+                <img
+                  src="//cdn.shopify.com/s/files/1/0064/4435/1539/files/home-service-img-1_200x.png?v=1621997267"
+                  alt=""
+                  class="h-full"
+                />
+                <div class="ml-12">
+                  <p class="font-bold mb-4 text-3xl">
+                    Free Shipping & Returns*
+                  </p>
+                  <p class="text-2xl mb-1">
+                    Phasellus lorem malesuada ligula cosmopolis
+                  </p>
+                  <a class="text-xl underline cursor-pointer"
+                    >Terms & Condition Applied</a
+                  >
+                </div>
+              </div>
+              <div class="w-4/12 flex px-16">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0064/4435/1539/files/home-service-img-2_200x.png?v=1621997280"
+                  alt=""
+                  class="h-full"
+                />
+                <div class="ml-12">
+                  <p class="font-bold mb-4 text-3xl">Longtime Warranty</p>
+                  <p class="text-2xl mb-1">
+                    Phasellus lorem malesuada ligula cosmopolis
+                  </p>
+                  <a class="text-xl underline cursor-pointer">Read more</a>
+                </div>
+              </div>
+              <div class="w-4/12 flex px-16">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0064/4435/1539/files/home-service-img-3_200x.png?v=1621997294"
+                  alt=""
+                  class="h-full"
+                />
+                <div class="ml-12">
+                  <p class="font-bold mb-4 text-3xl">
+                    Top Notch Customer Service
+                  </p>
+                  <p class="text-2xl mb-1">
+                    Phasellus lorem malesuada ligula cosmopolis
+                  </p>
+                  <a class="text-xl underline cursor-pointer">Learn how</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- paddle board -->
+          <section class="paddle-board mt-12 relative">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0064/4435/1539/files/home-top-banner_1920x.jpg?v=1622019695"
+              alt=""
+              class="w-full h-full"
+            />
+            <div class="paddle-board-shop">
+              <p class="text-7xl font-bold mb-1">Stand Up Paddle Board</p>
+              <p class="text-3xl font-bold mb-8">From 499$</p>
+              <p class="text-2xl text-left mb-20">
+                Quisquemos sodales suscipit tortor condimentum de cosmo lacus
+                meleifend menean blanditos.
+              </p>
+              <a class="shop-now-2 cursor-pointer">SHOP NOW</a>
+            </div>
+          </section>
+
+          <!-- Product -->
+          <section class="mt-24">
+            <div class="mb-11 pd-4 relative">
+              <h3 class="text-4xl font-bold mb-4 text-center">New Products</h3>
+              <a
+                class="
+                  absolute
+                  right-0
+                  -bottom-2
+                  font-normal
+                  underline
+                  text-gray-600
+                  cursor-pointer
+                "
+                >View All</a
+              >
+            </div>
+            <div
+              class="new-products relative"
+              ng-controller="newProductController"
+              ng-init="limit = 8"
+            >
+              <div
+                class="grid-item"
+                ng-repeat="product in products | limitTo: limit as results"
+              >
+                <a class="cursor-pointer w-full h-full">
+                  <div class="grid-image relative image-link">
+                    <img
+                      ng-src="{{product.imgSrc}}"
+                      alt=""
+                      class="w-full h-full"
+                    />
+                    <div class="absolute top-6 right-6">
+                      <span class="w-16 h-10 bg-green-400 text-center"
+                        >New</span
+                      >
+                    </div>
+                    <i class="fal fa-heart absolute top-6 left-6"></i>
+                    <a class="quick-view">Quick View</a>
+                    <div class="absolute bottom-0 w-full h-ful">
+                      <button
+                        class="
+                          w-full
+                          h-ful
+                          font-semibold
+                          uppercase
+                          text-2xl
+                          bg-white
+                          add-to-cart
+                        "
+                      >
+                        add to cart
+                      </button>
+                    </div>
+                  </div>
+                </a>
+                <div>
+                  <a
+                    class="
+                      uppercase
+                      font-normal
+                      text-xl text-gray-600
+                      hover:underline
+                      cursor-pointer
+                    "
+                    >{{product.vendor}}</a
+                  >
+                  <div class="flex justify-between mt-2 items-center">
+                    <a
+                      class="
+                        capitalize
+                        font-medium
+                        hover:underline
+                        cursor-pointer
+                        text-2xl
+                      "
+                      >{{product.name}}</a
+                    >
+                    <span class="capitalize">{{product.defaultColor}}</span>
+                  </div>
+                  <div>
+                    <span
+                      class="fas fa-star text-yellow-300 text-lg"
+                      ng-repeat="n in createArray(product.rating) track by $index"
+                    ></span>
+                  </div>
+                  <p class="font-bold text-2xl mt-2">
+                    {{product.price | currency}}
+                  </p>
+                  <ul class="flex gap-x-3 mt-2">
+                    <li
+                      class="w-8 h-8 rounded-full bg-black cursor-pointer"
+                      title="black"
+                    ></li>
+                    <li
+                      class="bg-yellow-100 w-8 h-8 rounded-full cursor-pointer"
+                      title="Beige"
+                    ></li>
+                    <li
+                      class="bg-green-600 w-8 h-8 rounded-full cursor-pointer"
+                    ></li>
+                    <li
+                      class="bg-red-600 w-8 h-8 rounded-full cursor-pointer"
+                    ></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="text-center w-full absolute -bottom-32">
+                <button
+                  ng-hide="results.length === products.length"
+                  ng-click="limit = limit +8"
+                  class="
+                    px-6
+                    py-5
+                    font-semibold
+                    rounded-lg
+                    color-black
+                    bg-white
+                    border-2 border-black
+                    w-96
+                    hover:bg-black hover:text-white
+                  "
+                >
+                  SHOW MORE
+                </button>
+              </div>
+              <!-- quick view here -->
+            </div>
+          </section>
+          <!-- Buy now -->
+          <section class="buy-now relative">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0064/4435/1539/files/home-bottom-banner_1920x.png?v=1622194494"
+              alt=""
+              class="w-full h-full"
+            />
+            <div class="let-surf-overlay"></div>
+            <div class="let-surf">
+              <h3 class="text-7xl font-bold mb-1">Let Surf!</h3>
+              <p class="text-3xl font-bold mb-8">Starting at 0% APR</p>
+              <p class="text-2xl text-left mb-20">
+                Quisquemos sodales suscipit tortor condimentum de cosmo lacus
+                meleifend menean blanditos.
+              </p>
+            </div>
+          </section>
+          <!-- Featured Collections -->
+          <section class="mt-24">
+            <div class="mb-11 pd-4 relative">
+              <h3 class="text-4xl font-bold mb-4 text-center">
+                Featured Collections
+              </h3>
+              <a
+                class="
+                  absolute
+                  right-0
+                  -bottom-2
+                  font-normal
+                  underline
+                  text-gray-600
+                  cursor-pointer
+                "
+                >View All</a
+              >
+            </div>
+            <div
+              class="featured-collection"
+              ng-controller="featuredCollectionController"
+            >
+              <div
+                class="grid-item text-center"
+                ng-repeat="collection in collections"
+              >
+                <img
+                  ng-src="{{collection.imgSrc}}"
+                  alt=""
+                  class="mx-auto mb-5"
+                />
+                <h3 class="font-bold text-3xl pt-2 capitalize">
+                  {{collection.title}}
+                </h3>
+                <p class="text-xl font-normal px-2 pt-5 pb-9 mb-4">
+                  {{collection.description}}
+                </p>
+                <a class="shop-now-2 shop-now-3 cursor-pointer">SHOP NOW</a>
+              </div>
+            </div>
+          </section>
+          <!-- where to ride -->
+          <section class="where2ride">
+            <h3
+              class="
+                absolute
+                text-7xl
+                px-9
+                -top-10
+                right-2/4
+                transform
+                translate-x-2/4
+                font-bold
+              "
+            >
+              #Where2Ride
+            </h3>
+            <p class="text-3xl pt-20 text-center">
+              Phasellus lorem malesuada ligula pulvinar milance.
+            </p>
+            <div class="swiper-container mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-custom">
+                  <div class="swiper-image">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0064/4435/1539/files/1_4eb1facf-f95f-488f-aa1d-26dd770eec32_1024x1024_crop_center.jpg?v=1621585749"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h4 class="capitalize mb-4 font-bold text-4xl mt-6">
+                      Viet Nam
+                    </h4>
+                    <p class="text-2xl font-normal">
+                      Next trip: 07 March 2021 / 1-3 weeks
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-custom">
+                  <div class="swiper-image">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0064/4435/1539/files/2_f19a13b4-c274-4de4-9481-74f69f23474c_1024x1024_crop_center.jpg?v=1621585824"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h4 class="capitalize mb-4 font-bold text-4xl mt-6">
+                      Thailand
+                    </h4>
+                    <p class="text-2xl font-normal">
+                      Next trip: 10 May 2021 / 2-4 weeks
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-custom">
+                  <div class="swiper-image">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0064/4435/1539/files/3_7a2b7e2c-2aaf-491f-a98a-a74398fe7e0d_1024x1024_crop_center.jpg?v=1621585837"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h4 class="capitalize mb-4 font-bold text-4xl mt-6">
+                      Indonesia
+                    </h4>
+                    <p class="text-2xl font-normal">
+                      Next trip: 18 July 2021 / 3-5 weeks
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-custom">
+                  <div class="swiper-image">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0064/4435/1539/files/1_4eb1facf-f95f-488f-aa1d-26dd770eec32_1024x1024_crop_center.jpg?v=1621585749"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h4 class="capitalize mb-4 font-bold text-4xl mt-6">
+                      Viet Nam
+                    </h4>
+                    <p class="text-2xl font-normal">
+                      Next trip: 07 March 2021 / 1-3 weeks
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-custom">
+                  <div class="swiper-image">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0064/4435/1539/files/2_f19a13b4-c274-4de4-9481-74f69f23474c_1024x1024_crop_center.jpg?v=1621585824"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h4 class="capitalize mb-4 font-bold text-4xl mt-6">
+                      Thailand
+                    </h4>
+                    <p class="text-2xl font-normal">
+                      Next trip: 10 May 2021 / 2-4 weeks
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-custom">
+                  <div class="swiper-image">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0064/4435/1539/files/3_7a2b7e2c-2aaf-491f-a98a-a74398fe7e0d_1024x1024_crop_center.jpg?v=1621585837"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h4 class="capitalize mb-4 font-bold text-4xl mt-6">
+                      Indonesia
+                    </h4>
+                    <p class="text-2xl font-normal">
+                      Next trip: 18 July 2021 / 3-5 weeks
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next -mt-28"></div>
+              <div class="swiper-button-prev -mt-28"></div>
+              <div class="swiper-pagination -mt-32"></div>
+            </div>
+            <div class="text-center mt-12">
+              <a
+                type="button"
+                class="
+                  bg-black
+                  text-white
+                  capitalize
+                  px-16
+                  py-6
+                  text-3xl text-center
+                  mx-auto
+                  hover:text-black hover:bg-white
+                  transition
+                  duration-300
+                  ease-in
+                  cursor-pointer
+                "
+                >contact our booking team</a
+              >
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer ng-include=""></footer>
+    </div>
+  </body>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</html>
